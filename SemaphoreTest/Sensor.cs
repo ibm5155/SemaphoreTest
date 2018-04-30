@@ -42,6 +42,7 @@ namespace SemaphoreTest
 
         public async void RunCom()
         {
+            //envia dados de tráfego para o semaforo
             traphicAmount = Global.random.Next(1, 100);
             if (_sentido == Sentido.Horizontal)
             {
@@ -51,6 +52,7 @@ namespace SemaphoreTest
             {
                 Global.S.SetTaxaTrafegoVertical(traphicAmount);
             }
+            Debug.WriteLine("enviando dados de tráfego");
             while (true)
             {
                 await Task.Delay(Global.random.Next(5000, 50000));
@@ -62,6 +64,7 @@ namespace SemaphoreTest
                 {
                     Global.S.SetTaxaTrafegoVertical(traphicAmount);
                 }
+                Debug.WriteLine("enviando dados de tráfego");
 
             }
         }
@@ -85,6 +88,7 @@ namespace SemaphoreTest
                 if((MyClock % 360) - 60 == 0)
                 {
                     traphicAmount = Global.random.Next(1, 100);
+                    Debug.WriteLine("Medição de tráfego alterada");
                 }
                 // H e V informam as suas taxas de tráfego p e q, respectivamente, a cada 6 minutos, 
                 // em tempos múltiplos de 6 minutos menos 1 minuto (5, 11, 17, ...). 
@@ -102,6 +106,7 @@ namespace SemaphoreTest
                     await Task.Delay(1);
                     cnt++;
                 } while (cnt / 100 < _synctimeSec);
+                Debug.WriteLine("Sincronizando o tempo com o time server");
                 AjustTime();
             }
         }

@@ -31,7 +31,7 @@ namespace SemaphoreTest
         {
             int cnt = 0;
             int temposemaforo = 0;
-            ModoSemaforo = SetTimeRule(_taxaTrafegoH / (_taxaTrafegoH + _taxaTrafegoV));
+            ModoSemaforo = SetTimeRule((double)_taxaTrafegoH / (double)(_taxaTrafegoH + _taxaTrafegoV));
             while (true)
             {
                 do
@@ -56,7 +56,7 @@ namespace SemaphoreTest
                     }
                 } while (cnt < 60000);
 
-                ModoSemaforo = SetTimeRule(_taxaTrafegoH / (_taxaTrafegoH + _taxaTrafegoV));
+                ModoSemaforo = SetTimeRule((double)_taxaTrafegoH / (double)(_taxaTrafegoH + _taxaTrafegoV));
                 //S atualiza o modo de operação a cada 6 minutos, em tempos múltiplos de 6 minutos (0, 6, 12, 18, ...).
             }
 
@@ -123,7 +123,8 @@ namespace SemaphoreTest
 
         public void SetTaxaTrafegoHorizontal(int taxaTrafego)
         {
-            _taxaTrafegoH = taxaTrafego;        }
+            _taxaTrafegoH = taxaTrafego;        
+        }
 
         public void SetTaxaTrafegoVertical(int taxaTrafego)
         {
