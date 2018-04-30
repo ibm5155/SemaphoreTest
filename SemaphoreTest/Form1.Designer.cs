@@ -29,40 +29,43 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Quantidade1 = new System.Windows.Forms.TextBox();
-            this.Quantidade2 = new System.Windows.Forms.TextBox();
+            this.QuantidadeH = new System.Windows.Forms.TextBox();
+            this.QuantidadeV = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Cars1 = new System.Windows.Forms.PictureBox();
             this.Cars2 = new System.Windows.Forms.PictureBox();
-            this.Semaphore2 = new System.Windows.Forms.PictureBox();
-            this.Semaphore1 = new System.Windows.Forms.PictureBox();
+            this.SemaphoreV = new System.Windows.Forms.PictureBox();
+            this.SemaphoreH = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox_Timestamp1 = new System.Windows.Forms.TextBox();
-            this.textBox_Timestamp2 = new System.Windows.Forms.TextBox();
-            this.textBox_Tempo1 = new System.Windows.Forms.TextBox();
-            this.textBox_Tempo2 = new System.Windows.Forms.TextBox();
+            this.textBox_TempoSemaforo = new System.Windows.Forms.TextBox();
+            this.textBox_TempoH = new System.Windows.Forms.TextBox();
+            this.textBox_TempoV = new System.Windows.Forms.TextBox();
+            this.textBox_TempoT = new System.Windows.Forms.TextBox();
+            this.textBox_Modo = new System.Windows.Forms.TextBox();
+            this.textBox_timesync = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cars1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cars2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Semaphore2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Semaphore1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SemaphoreV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SemaphoreH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // Quantidade1
+            // QuantidadeH
             // 
-            this.Quantidade1.Location = new System.Drawing.Point(10, 170);
-            this.Quantidade1.Name = "Quantidade1";
-            this.Quantidade1.Size = new System.Drawing.Size(52, 20);
-            this.Quantidade1.TabIndex = 4;
+            this.QuantidadeH.Location = new System.Drawing.Point(10, 170);
+            this.QuantidadeH.Name = "QuantidadeH";
+            this.QuantidadeH.Size = new System.Drawing.Size(52, 20);
+            this.QuantidadeH.TabIndex = 4;
             // 
-            // Quantidade2
+            // QuantidadeV
             // 
-            this.Quantidade2.Location = new System.Drawing.Point(209, 4);
-            this.Quantidade2.Name = "Quantidade2";
-            this.Quantidade2.Size = new System.Drawing.Size(52, 20);
-            this.Quantidade2.TabIndex = 5;
+            this.QuantidadeV.Location = new System.Drawing.Point(209, 4);
+            this.QuantidadeV.Name = "QuantidadeV";
+            this.QuantidadeV.Size = new System.Drawing.Size(52, 20);
+            this.QuantidadeV.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -103,31 +106,31 @@
             this.Cars2.TabIndex = 2;
             this.Cars2.TabStop = false;
             // 
-            // Semaphore2
+            // SemaphoreV
             // 
-            this.Semaphore2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Semaphore2.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.Semaphore2.Image = global::SemaphoreTest.Properties.Resources.vermelho;
-            this.Semaphore2.InitialImage = global::SemaphoreTest.Properties.Resources.vermelho;
-            this.Semaphore2.Location = new System.Drawing.Point(158, 42);
-            this.Semaphore2.Name = "Semaphore2";
-            this.Semaphore2.Size = new System.Drawing.Size(35, 33);
-            this.Semaphore2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Semaphore2.TabIndex = 1;
-            this.Semaphore2.TabStop = false;
+            this.SemaphoreV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SemaphoreV.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.SemaphoreV.Image = global::SemaphoreTest.Properties.Resources.vermelho;
+            this.SemaphoreV.InitialImage = global::SemaphoreTest.Properties.Resources.vermelho;
+            this.SemaphoreV.Location = new System.Drawing.Point(158, 42);
+            this.SemaphoreV.Name = "SemaphoreV";
+            this.SemaphoreV.Size = new System.Drawing.Size(35, 33);
+            this.SemaphoreV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SemaphoreV.TabIndex = 1;
+            this.SemaphoreV.TabStop = false;
             // 
-            // Semaphore1
+            // SemaphoreH
             // 
-            this.Semaphore1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Semaphore1.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.Semaphore1.Image = global::SemaphoreTest.Properties.Resources.vermelho;
-            this.Semaphore1.InitialImage = global::SemaphoreTest.Properties.Resources.vermelho;
-            this.Semaphore1.Location = new System.Drawing.Point(79, 131);
-            this.Semaphore1.Name = "Semaphore1";
-            this.Semaphore1.Size = new System.Drawing.Size(35, 33);
-            this.Semaphore1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Semaphore1.TabIndex = 0;
-            this.Semaphore1.TabStop = false;
+            this.SemaphoreH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SemaphoreH.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.SemaphoreH.Image = global::SemaphoreTest.Properties.Resources.vermelho;
+            this.SemaphoreH.InitialImage = global::SemaphoreTest.Properties.Resources.vermelho;
+            this.SemaphoreH.Location = new System.Drawing.Point(79, 131);
+            this.SemaphoreH.Name = "SemaphoreH";
+            this.SemaphoreH.Size = new System.Drawing.Size(35, 33);
+            this.SemaphoreH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SemaphoreH.TabIndex = 0;
+            this.SemaphoreH.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -147,66 +150,96 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // textBox_Timestamp1
+            // textBox_TempoSemaforo
             // 
-            this.textBox_Timestamp1.Enabled = false;
-            this.textBox_Timestamp1.Location = new System.Drawing.Point(264, 235);
-            this.textBox_Timestamp1.Name = "textBox_Timestamp1";
-            this.textBox_Timestamp1.Size = new System.Drawing.Size(162, 20);
-            this.textBox_Timestamp1.TabIndex = 9;
-            this.textBox_Timestamp1.Text = "Timestamp Semaforo 1: ";
+            this.textBox_TempoSemaforo.Enabled = false;
+            this.textBox_TempoSemaforo.Location = new System.Drawing.Point(264, 235);
+            this.textBox_TempoSemaforo.Name = "textBox_TempoSemaforo";
+            this.textBox_TempoSemaforo.Size = new System.Drawing.Size(162, 20);
+            this.textBox_TempoSemaforo.TabIndex = 9;
+            this.textBox_TempoSemaforo.Text = "Tempo Semaforo:";
             // 
-            // textBox_Timestamp2
+            // textBox_TempoH
             // 
-            this.textBox_Timestamp2.Enabled = false;
-            this.textBox_Timestamp2.Location = new System.Drawing.Point(264, 261);
-            this.textBox_Timestamp2.Name = "textBox_Timestamp2";
-            this.textBox_Timestamp2.Size = new System.Drawing.Size(162, 20);
-            this.textBox_Timestamp2.TabIndex = 10;
-            this.textBox_Timestamp2.Text = "Timestamp Semaforo 2: ";
+            this.textBox_TempoH.Enabled = false;
+            this.textBox_TempoH.Location = new System.Drawing.Point(264, 261);
+            this.textBox_TempoH.Name = "textBox_TempoH";
+            this.textBox_TempoH.Size = new System.Drawing.Size(162, 20);
+            this.textBox_TempoH.TabIndex = 10;
+            this.textBox_TempoH.Text = "Tempo Sensor H:";
             // 
-            // textBox_Tempo1
+            // textBox_TempoV
             // 
-            this.textBox_Tempo1.Enabled = false;
-            this.textBox_Tempo1.Location = new System.Drawing.Point(264, 287);
-            this.textBox_Tempo1.Name = "textBox_Tempo1";
-            this.textBox_Tempo1.Size = new System.Drawing.Size(162, 20);
-            this.textBox_Tempo1.TabIndex = 11;
-            this.textBox_Tempo1.Text = "Tempo Semaforo 1:";
+            this.textBox_TempoV.Enabled = false;
+            this.textBox_TempoV.Location = new System.Drawing.Point(264, 287);
+            this.textBox_TempoV.Name = "textBox_TempoV";
+            this.textBox_TempoV.Size = new System.Drawing.Size(162, 20);
+            this.textBox_TempoV.TabIndex = 11;
+            this.textBox_TempoV.Text = "Tempo Sensor V:";
             // 
-            // textBox_Tempo2
+            // textBox_TempoT
             // 
-            this.textBox_Tempo2.Enabled = false;
-            this.textBox_Tempo2.Location = new System.Drawing.Point(264, 313);
-            this.textBox_Tempo2.Name = "textBox_Tempo2";
-            this.textBox_Tempo2.Size = new System.Drawing.Size(162, 20);
-            this.textBox_Tempo2.TabIndex = 12;
-            this.textBox_Tempo2.Text = "Tempo Semaforo 2:";
+            this.textBox_TempoT.Enabled = false;
+            this.textBox_TempoT.Location = new System.Drawing.Point(264, 313);
+            this.textBox_TempoT.Name = "textBox_TempoT";
+            this.textBox_TempoT.Size = new System.Drawing.Size(162, 20);
+            this.textBox_TempoT.TabIndex = 12;
+            this.textBox_TempoT.Text = "Tempo T:";
+            // 
+            // textBox_Modo
+            // 
+            this.textBox_Modo.Enabled = false;
+            this.textBox_Modo.Location = new System.Drawing.Point(264, 209);
+            this.textBox_Modo.Name = "textBox_Modo";
+            this.textBox_Modo.Size = new System.Drawing.Size(162, 20);
+            this.textBox_Modo.TabIndex = 13;
+            this.textBox_Modo.Text = "Modo Semaforo:";
+            // 
+            // textBox_timesync
+            // 
+            this.textBox_timesync.Location = new System.Drawing.Point(382, 49);
+            this.textBox_timesync.Name = "textBox_timesync";
+            this.textBox_timesync.Size = new System.Drawing.Size(37, 20);
+            this.textBox_timesync.TabIndex = 14;
+            this.textBox_timesync.Text = "1";
+            this.textBox_timesync.TextChanged += new System.EventHandler(this.textBox_timesync_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(209, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Tempo Sincronização TimeServer";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(494, 349);
-            this.Controls.Add(this.textBox_Tempo2);
-            this.Controls.Add(this.textBox_Tempo1);
-            this.Controls.Add(this.textBox_Timestamp2);
-            this.Controls.Add(this.textBox_Timestamp1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox_timesync);
+            this.Controls.Add(this.textBox_Modo);
+            this.Controls.Add(this.textBox_TempoT);
+            this.Controls.Add(this.textBox_TempoV);
+            this.Controls.Add(this.textBox_TempoH);
+            this.Controls.Add(this.textBox_TempoSemaforo);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Quantidade2);
-            this.Controls.Add(this.Quantidade1);
+            this.Controls.Add(this.QuantidadeV);
+            this.Controls.Add(this.QuantidadeH);
             this.Controls.Add(this.Cars1);
             this.Controls.Add(this.Cars2);
-            this.Controls.Add(this.Semaphore2);
-            this.Controls.Add(this.Semaphore1);
+            this.Controls.Add(this.SemaphoreV);
+            this.Controls.Add(this.SemaphoreH);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cars1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cars2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Semaphore2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Semaphore1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SemaphoreV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SemaphoreH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -215,19 +248,22 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox Semaphore1;
-        private System.Windows.Forms.PictureBox Semaphore2;
+        private System.Windows.Forms.PictureBox SemaphoreH;
+        private System.Windows.Forms.PictureBox SemaphoreV;
         private System.Windows.Forms.PictureBox Cars2;
         private System.Windows.Forms.PictureBox Cars1;
-        private System.Windows.Forms.TextBox Quantidade1;
-        private System.Windows.Forms.TextBox Quantidade2;
+        private System.Windows.Forms.TextBox QuantidadeH;
+        private System.Windows.Forms.TextBox QuantidadeV;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox textBox_Timestamp1;
-        private System.Windows.Forms.TextBox textBox_Timestamp2;
-        private System.Windows.Forms.TextBox textBox_Tempo1;
-        private System.Windows.Forms.TextBox textBox_Tempo2;
+        private System.Windows.Forms.TextBox textBox_TempoSemaforo;
+        private System.Windows.Forms.TextBox textBox_TempoH;
+        private System.Windows.Forms.TextBox textBox_TempoV;
+        private System.Windows.Forms.TextBox textBox_TempoT;
+        private System.Windows.Forms.TextBox textBox_Modo;
+        private System.Windows.Forms.TextBox textBox_timesync;
+        private System.Windows.Forms.Label label1;
     }
 }
 
